@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Ejericio</title>
+        <link rel="stylesheet" href="./PrácticaHtml5.css"/>
+        
+        <script src="PracticaJs.js"></script>
+    </head>
+    <body>
+    <div class="id1">
+        
+        <header>
+            <h1>
+                Formulario HML5
+            </h1>
+        </header>
+        <section>
+            <form method="GET" action="./PracticaHtml.php" id="formulario">
+            <h5 class="rojo">Los campos coloreados son obligatorios</h5>
+           
+                <div class="fila">
+                    <div class="mitad">
+                    <fieldset>
+                     <legend>Datos de aplicaci&oacute;n </legend>
+                     <div class="fila">                
+                        <span class="rojo mitad"> Usuario</span><span class="inp mitad"> <input type="text" name="1" placeholder="Usuario" required></span><br>
+                        <span class="rojo  mitad">Contrase&ntilde;a</span><span class="inp mitad"> <input id="contra" type="password" name="2" placeholder="Contrase&ntilde;a" required></span><br>
+                        <span class="rojo mitad"> Repite contrase&ntilde;a</span> <span class="inp mitad"><input id="contra2" type="password" name="3" placeholder="Contrase&ntilde;a" required></span><br>
+                     </div>
+                    </fieldset>
+                    </div>
+                <div class="mitad">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <div class="fila">
+                        <span class="purple mitad">Nombre</span> <span class="inp mitad"><input id="nombre" type="text" name="4" placeholder="Nombre"></span><br>
+                        <span class="purple mitad">Primer apellido</span> <span class="inp mitad"><input id="apellido" type="text" name="5" placeholder="Primer apellido"></span><br>
+                        <span class="purple mitad">Segundo apellido</span> <span class="inp mitad"><input id="apellido2" type="text" name="6" placeholder="Segundo apellido"></span><br>
+                        <span class="mitad">Fecha de nacimiento</span> <span class="inp mitad "><input  class="plac" type="date" name="7"></span><br>
+                        </div>
+                    </fieldset> 
+                    </div> 
+                </div>
+                <div class="fila">
+                    <div class="mitad">
+                    <fieldset>
+                    <legend>Direcci&oacute;n</legend>
+                    <div class="fila">
+                        <span class="mitad">  Calle,n&uacute;mero,piso...</span> <span class="inp"><input type="text" name="8" placeholder="Direcci&oacute;n completa"></span><br>
+                   <span class="mitad"> C&oacute;digo postal</span><span class="inp"><input type="text" name="9" placeholder="C&oacute;digo postal"></span><br>
+                    <span class="mitad">Municipio</span><span class="inp"><input type="text" name="10" placeholder="Municipio"></span><br>
+                    <span class=mitad>Provincia</span>  <span class="mitad"><select class="inp place ">
+                               
+                               <option value="1">Provincia1 </option> 
+                               <option value="2">Provincia2</option>
+                               <option selected value="3">Madrid</option> 
+                            </select>
+                            </span>
+                    <span class="mitad">Pa&iacute;s</span> 
+                          <span class="mitad">   <select class="inp place">
+                                
+                                <option value="0">Pais1 </option> 
+                                <option value="1">Pais2</option>
+                                <option selected value="2">España</option>
+                             
+                            </select>
+                        </span>
+                        </div>  
+                    </fieldset>
+                    </div>
+                
+                    <div class="mitad">
+                <fieldset>
+                    <legend>Informaci&oacute;n de contacto</legend>
+                    <div class="fila">
+                 <span class="rojo mitad">Email</span><span class="mitad"><input type="email" name="11" placeholder="Email" required></span>
+                 <span class="inp mitad">Tel&eacute;fono fijo</span> <span class="mitad"><input  class="mitad inp" type="tel" name="12" placeholder="Tel&eacute;fono fijo"></span>
+                 <span class="inp mitad">Tel&eacute;fono m&oacute;vil</span><span class="mitad"> <input class="mitad inp" type="tel" name="13" placeholder="Tel&eacute;fono m&oacute;vil"></span>
+                </div>
+                </fieldset>
+                </div>
+                </div>
+                <div class="fila">
+                    <div class="entero">
+                    <fieldset>
+                    <legend>Otros datos</legend>
+                        
+                        <div class="fila">
+                        <div class="tercio">
+                            Carnet de conducir<br>
+                        <input type="radio" name="14" class="into" id="tengoCarnet">Si
+                        <input type="radio" name="14" class="into" checked id="noCarnet">No
+                        </div>
+                        
+                        <div class="tercio oculto " id="bloqueCoche">
+                            Coche propio<br>
+                            <input type="radio"  value="into" name="f" class="into" id="tengoCoche">Si
+                            <input type="radio" id="noCoche" value="no" name="f" class="into" checked >No
+                        </div>
+
+                            <div class="mitad oculto  fila" id="bloqueMarca">
+                               <span class="mitad"> <input  id="color" type="color" name="e" value="col"></span>
+                               <span class="mitad"> <select id="marc">
+                                    <option value="p" selected>Marca</option>
+                                    <option value="o">Ferrari</option>
+                 
+                                    <option value="q">Porche</option>
+
+                                </select>
+                                </span>
+                            </div>
+                      </fieldset>
+                
+            </div>
+                </div>
+            <div class="fila">
+                <div class="entero">
+                 <fieldset>
+                    Comentario<br>
+                    <textarea class="h" id="texto" > </textarea>
+                </fieldset>
+            </div>
+            </div>
+            <div class="fila">
+                <div class="entero boton3">
+                <span class="envi " ><input class="boton"type="submit" name="16" value="Enviar"></span>
+               <span class="envi"><input id="boton" class="boton" type="button" name="17" value="Continuar"></span>
+            </div>
+            </div>
+        </form>
+        </section>
+        <aside>
+            <h2><b>Contenido relacionado</b></h2>
+            <hr>
+            <a href="https://www.w3schools.com/html/" target="_blank"><img src="./imaHtml.png" alt="html5" ></a>
+            <hr>
+            <a href="https://www.w3schools.com/css/" target="_blank"><img src="./imaCss.png" alt="css3"></a>
+        <hr>
+        <a href="https://www.w3schools.com/js/" target="_blank"><img src="./imaJv.png" alt="javaS"></a>    
+        </aside>
+            <footer>    
+           <h2> Alejandro Corchero L&oacute;pez</h2>
+            
+        </footer>
+    </div>
+    </body>
+</html>

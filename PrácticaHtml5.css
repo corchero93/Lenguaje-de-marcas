@@ -1,0 +1,103 @@
+
+.id1{
+    margin:auto;
+    height:100% ;
+    width: 90%;
+}
+.fila{
+display:flex;
+flex-wrap: wrap;
+}
+.mitad{
+    flex:0 0 50%; 
+}
+.entero{
+    flex:0 0 100%;
+}
+
+.tercio{ /* esto es para los cuartos*/
+    flex:0 0 25%;
+    
+}
+aside img{
+    max-width: 46%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+aside img:hover{
+    background-color: yellow;
+
+}
+.boton3{
+    text-align: right;
+}
+.oculto{
+    display:none;
+}
+.boton{
+    padding: 5px;
+    margin: 10px;
+    
+}
+.plac{
+    width: 73%;
+}
+.place{
+    width: 76%;
+}
+header{
+    width: 91%;
+    background-color: lightblue;
+    border:1px solid lightblue;
+    text-align: center;
+}
+section{
+    border:1px solid lightgray;
+    width: 70%;
+    display: inline-block;
+    background-color: lightgrey;
+}
+aside{
+    border:1px solid black;
+    width:15%;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    border:none;
+    padding-left: 40px;
+    padding-right: 25px;
+    font-size: 10px;
+    
+}
+footer{
+    border:1px solid lightblue;
+    width: 91%;
+    background-color:lightblue;
+    text-align: center;
+}
+
+
+.envi{
+    
+    margin-left: 0%;
+}
+
+
+.h{
+    width:95%;
+    padding:10px;
+
+}
+.rojo{
+    color:red;
+    
+}
+.into{
+    margin: auto;
+}
+.purple{
+    color: purple;
+}
+
